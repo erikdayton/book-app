@@ -1,0 +1,102 @@
+@import 'shared/fonts.css';
+
+:root {
+  font-family: 'GT Eesti Pro Display Thin';
+  font-size: 20px;
+  color: #f1f1f1
+}
+*,*::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient( #0a222f, #081a26);
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.inner-container {
+  margin: 0 2rem;
+}
+.header-title {
+  color: #f19f51;
+  text-decoration: none;
+  font-size: 40px;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.header-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  padding: 1rem;
+  list-style: none;
+}
+.header-nav li a, .page-link {
+  color: #8da3b3;
+  text-decoration: none;
+}
+.header-title:hover {
+  color: #8da3b3;
+  transition: .2s ease all;
+
+}
+.header-nav li a:hover {
+  color: #f19f51;
+}
+
+.page-header {
+  font-weight:500;
+  color: #8da3b3;
+}
+.front-page-book-covers {
+  max-height: 250px;
+}
+.btn {
+  border: none;
+  border-radius: 7px;
+  padding: 4px 10px;
+  font-size: 15px;
+  font-family: 'GT Eesti Pro Display Thin';
+  cursor: pointer;
+  text-decoration: none;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+.btn-primary {
+  color: #1c1d1e;
+  background-color: #8da3b3;
+}
+.btn-delete {
+  color: #1c1d1e;
+  background-color: #f19f51;
+}
+.btn:hover {
+  background-color: #e1e1e1;
+  transition: .2s ease all;
+
+} 
+.btn-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.btn-row > * {
+  margin-left: 5px;
+}
+.btn-row > *:first-child {
+  margin-left: 0;
+}
