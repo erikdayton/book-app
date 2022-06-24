@@ -1,4 +1,5 @@
 @import 'shared/fonts.css';
+@import 'shared/form.css';
 
 :root {
   font-family: 'GT Eesti Pro Display Thin';
@@ -80,11 +81,26 @@ body {
   color: #1c1d1e;
   background-color: #8da3b3;
 }
+.btn-third {
+  color: #8da3b3;
+  background-color: transparent;
+  border: 1px solid #8da3b3;
+}
+.btn-third:hover {
+  color: #1c1d1e;
+  background-color: #8da3b3;
+  transition: .2s ease all;
+  border: 1px solid #8da3b3;
+} 
 .btn-delete {
   color: #1c1d1e;
   background-color: #f19f51;
 }
-.btn:hover {
+.btn-delete:hover {
+  color: #1c1d1e;
+  background-color: #ef8f35;
+}
+.btn-primary:hover {
   background-color: #e1e1e1;
   transition: .2s ease all;
 
