@@ -1,4 +1,4 @@
-@import 'shared/stylesheetFont.css';
+@import '/shared/stylesheetFont.css';
 @import 'shared/form.css';
 @import 'shared/books.css';
 
@@ -12,7 +12,6 @@
   box-sizing: border-box;
 }
 body {
-  /* background: linear-gradient( #0a222f, #081a26) cover; */
   text-align: center;
 }
 
