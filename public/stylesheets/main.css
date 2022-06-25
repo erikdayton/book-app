@@ -68,6 +68,17 @@ body {
 .front-page-book-covers {
   max-height: 400px;
 }
+.books-rec-add {
+  margin: 0 20px; 
+  max-height: 400px;
+  box-shadow: 0 10px 40px 0 rgba(93, 87, 166, 0.2);
+
+}
+.link-front-page {
+  list-style: none;
+  text-decoration: none;
+
+}
 .btn {
   border: none;
   border-radius: 7px;
