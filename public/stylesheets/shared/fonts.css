@@ -1,13 +1,13 @@
-/* @font-face {
+@font-face {
   font-family: 'GT Eesti Pro Display Medium';
-  src: url('GTEestiProDisplay-Medium.ttf') format('truetype');
+  src: url('/public/stylesheets/shared/fontFolder/GTEestiProDisplay-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GT Eesti Pro Display Bold';
-  src: url('GTEestiProDisplay-Bold.ttf') format('truetype');
+  src: url('/public/stylesheets/shared/fontFolder/GTEestiProDisplay-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: 'GT Eesti Pro Display Thin';
-  src: url('GTEestiProDisplay-Thin.ttf') format('truetype');
+  src: url('/public/stylesheets/shared/fontFolder/GTEestiProDisplay-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
-} */
+}

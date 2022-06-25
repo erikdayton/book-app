@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('GTEestiProDisplay-Thin.woff2') format('woff2'),
+        url('GTEestiProDisplay-Thin.woff') format('woff'),
+        url('GTEestiProDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('GTEestiProDisplay-Medium.woff2') format('woff2'),
+        url('GTEestiProDisplay-Medium.woff') format('woff'),
+        url('GTEestiProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('GTEestiProDisplay-Regular.woff2') format('woff2'),
+        url('GTEestiProDisplay-Regular.woff') format('woff'),
+        url('GTEestiProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('GTEestiProDisplay-Light.woff2') format('woff2'),
+        url('GTEestiProDisplay-Light.woff') format('woff'),
+        url('GTEestiProDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('GTEestiProDisplay-Bold.woff2') format('woff2'),
+        url('GTEestiProDisplay-Bold.woff') format('woff'),
+        url('GTEestiProDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

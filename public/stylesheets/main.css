@@ -1,4 +1,4 @@
-@import 'models/fontfolder/fonts.css';
+@import 'shared/stylesheetFont.css';
 @import 'shared/form.css';
 @import 'shared/books.css';
 
