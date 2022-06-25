@@ -1,0 +1,23 @@
+.book-grid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill);
+}
+.book-details {
+  display: flex;
+}
+.book-details  img {
+  margin: 0 20px;
+}
+.book-details-label {
+  font-size: 1.2rem;
+  align-self: flex-start;
+}
+.book-details-grid {
+  display: grid;
+  align-content: flex-start;
+  align-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto;
+}
