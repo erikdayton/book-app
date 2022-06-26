@@ -36,7 +36,8 @@
   font-family: 'GT Eesti Pro Display Medium';
   color: #8da3b3;
   text-align: center;
-  webkit-box-shadow: 0 10px 40px 0 rgba(93, 87, 166, 0.1);
+  box-shadow: 0 10px 40px 0 rgba(93, 87, 166, 0.1);
+  -webkit-box-shadow: 0 10px 40px 0 rgba(93, 87, 166, 0.1);
   width: 50%;
   margin-left: 50%;
   transform: translateX(-50%);
