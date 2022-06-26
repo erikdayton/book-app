@@ -1,11 +1,11 @@
 @import '/shared/stylesheetFont.css';
 @import 'shared/form.css';
 @import 'shared/books.css';
-@import 'shared/transfonterFolder/';
+
 
 
 :root {
-  font-family: 'GT Eesti Pro Display Thin';
+  font-family: 'GT Eesti Pro Display';
   font-size: 20px;
   color: #8da3b3
 }
@@ -29,6 +29,8 @@ body {
   color: #f19f51;
   text-decoration: none;
   font-size: 40px;
+  font-family: 'GT Eesti Pro Display Thin';
+
 }
 .header-nav {
   display: flex;
@@ -36,6 +38,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 5rem;
+  font-family: 'GT Eesti Pro Display Thin';
 }
 
 .header-nav ul {
@@ -64,6 +67,7 @@ body {
 .page-header {
   font-weight:500;
   color: #8da3b3;
+  font-family: 'GT Eesti Pro Display Thin';
 }
 .front-page-book-covers {
   max-height: 400px;
