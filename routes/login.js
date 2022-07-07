@@ -6,7 +6,6 @@ const bcrypt = require('bcrypt')
 const User = require('../models/users')
 
 passport.use(new localStrategy({ usernameField: 'email' },(email, password, done) => {
-  console.log('test')
   User.findOne({ email: email})
     .then(user => {
       if (!user) {
@@ -34,15 +33,13 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 })
 
-// router.get('/',  (req, res) => {
-//   res.render('logins/login')
-// })
 router.get('/', checkNotAuthenticated, (req, res) => {
   res.render('logins/login')
 })
-// router.get('/index', (req, res) => {
-//   res.render('logins/index')
-// })
+
+router.get('/index', (req, res) => {
+  res.render('logins/index')
+})
 
 router.post('/login', (req, res, next) => {
   next()
