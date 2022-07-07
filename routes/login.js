@@ -34,7 +34,10 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 })
 
-router.get('/', (req, res) => {
+// router.get('/',  (req, res) => {
+//   res.render('logins/login')
+// })
+router.get('/', checkNotAuthenticated, (req, res) => {
   res.render('logins/login')
 })
 // router.get('/index', (req, res) => {
@@ -86,7 +89,6 @@ function checkNotAuthenticated(req, res, next) {
   next( )
 }
 
-module.exports = router
 
 
 // app.delete('/logout', function (req, res, next) {
@@ -97,3 +99,6 @@ module.exports = router
 //     res.redirect('/login')
 //   })
 // })
+
+
+module.exports = router
