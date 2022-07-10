@@ -37,6 +37,9 @@ function checkAuthenticated(req, res, next) {
    if (req.isAuthenticated()) {
      return next()
    }
+   else {
+      res.redirect('/')
+   }
  }
 //Create Books Route
 router.post('/', checkAuthenticated, async (req, res) => {
@@ -51,7 +54,8 @@ router.post('/', checkAuthenticated, async (req, res) => {
   try {
     const newBook = await book.save()
     res.redirect(`books/${newBook.id}`)
-  } catch {
+  } catch (err){
+   console.log(err)
     renderNewPage(res, book, true)
   }
 })

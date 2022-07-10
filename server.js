@@ -33,7 +33,7 @@ app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 app.use(methodOverride('_method'))
 app.use(express.static('public'))
-app.use(bodyParser())
+app.use(bodyParser({limit: '50mb', extended: false}))
 app.use(methodOverride('_method'))
 
 
