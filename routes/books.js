@@ -33,9 +33,13 @@ router.get('/', async (req, res) => {
 router.get('/new', async (req, res) => {
    renderNewPage(res, new Book())
 })
-
+function checkAuthenticated(req, res, next) {
+   if (req.isAuthenticated()) {
+     return next()
+   }
+ }
 //Create Books Route
-router.post('/', async (req, res) => {
+router.post('/', checkAuthenticated, async (req, res) => {
    const book = new Book({
      title: req.body.title,
      author: req.body.author,
@@ -65,7 +69,7 @@ router.get('/:id', async (req, res) => {
 })
 
 //Edit Books route
-router.get('/:id/edit', async (req, res) => {
+router.get('/:id/edit', checkAuthenticated, async (req, res) => {
    try {
       const book = await Book.findById(req.params.id)
       renderEditPage(res, book)
@@ -74,7 +78,7 @@ router.get('/:id/edit', async (req, res) => {
    }
 })
 //Update Books Route
-router.put('/:id', async (req, res) => {
+router.put('/:id', checkAuthenticated, async (req, res) => {
    let book
   try {
     book = await  Book.findById(req.params.id)
@@ -97,7 +101,7 @@ router.put('/:id', async (req, res) => {
   }
 })
 //delete book page
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', checkAuthenticated, async (req, res) => {
    let book
    try {
       book = await Book.findById(req.params.id)

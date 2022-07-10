@@ -34,7 +34,19 @@ app.use(expressLayouts)
 app.use(methodOverride('_method'))
 app.use(express.static('public'))
 app.use(bodyParser())
+app.use(methodOverride('_method'))
 
+
+
+app.delete('/logout', function (req, res){
+    req.session.destroy(function (err) {
+      res.redirect('/'); 
+    });
+  });
+  
+
+
+  
 const mongoose = require('mongoose');
 const { response } = require('express')
 mongoose.connect(process.env.DATABASE_URL, {

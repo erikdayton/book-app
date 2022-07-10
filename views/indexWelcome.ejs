@@ -1,9 +1,0 @@
-<h6>Welcome!</h6>
-<h2 class="page-header">Recently Added Books</h2>
-<div>
-  <% books.forEach(book => { %>
-    <a class="link-front-page" href ="/books/<%= book.id%>">
-      <img class="books-rec-add" src="<%= book.coverImagePath %>">
-    </>
-  <% }) %>
-</div>

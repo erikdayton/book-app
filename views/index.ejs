@@ -1,5 +1,6 @@
 <% if (user)  { %>
 <h3>Welcome <%= user.name %>!</h3>
+<h5>Have a look around, but be sure to use your whisper voice</h5>
 <% } %>
 <h2 class="page-header">Recently Added Books</h2>
 <div>
@@ -9,3 +10,8 @@
     </>
   <% }) %>
 </div>
+<% if (user)  { %>
+  <form action="/logout?_method=DELETE" method="POST">
+    <button class="btn btn-third" type="submit"> Log Out</button>
+  </form>
+<% } %>

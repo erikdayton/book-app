@@ -38,7 +38,6 @@ router.get('/', checkNotAuthenticated, (req, res) => {
   res.render('logins/login')
 })
 router.get('/', (req, res) => {
-  console.log('said: ' + req.user)
   res.render('/', {user: req.user.name})
 })
 
@@ -73,12 +72,6 @@ router.post('/register', async (req, res) => {
     }
 })
 
-function checkAuthenticated(req, res, next) {
-  if (req.isAuthenticated()) {
-    return next()
-  }
-  res.redirect('/login')
-}
 
 function checkNotAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
@@ -88,15 +81,6 @@ function checkNotAuthenticated(req, res, next) {
 }
 
 
-
-// app.delete('/logout', function (req, res, next) {
-//   req.logOut(function(err) {
-//     if (err) {
-//       return next(err)
-//     }
-//     res.redirect('/login')
-//   })
-// })
 
 
 module.exports = router
