@@ -33,12 +33,13 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 })
 
+
 router.get('/', checkNotAuthenticated, (req, res) => {
   res.render('logins/login')
 })
-
-router.get('/index', (req, res) => {
-  res.render('logins/index')
+router.get('/', (req, res) => {
+  console.log('said: ' + req.user)
+  res.render('/', {user: req.user.name})
 })
 
 router.post('/login', (req, res, next) => {
@@ -83,7 +84,7 @@ function checkNotAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return res.redirect('/')
   }
-  next( )
+  next()
 }
 
 
