@@ -76,8 +76,12 @@ body {
   margin: 0 20px; 
   max-height: 400px;
   box-shadow: 0 10px 40px 0 rgba(93, 87, 166, 0.2);
-
 }
+
+
+.book-info {
+  text-align: left;
+} 
 .link-front-page {
   list-style: none;
   text-decoration: none;

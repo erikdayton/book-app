@@ -1,23 +1,39 @@
-.book-grid {
-  display: grid;
+.btn-grid {
+  display: flex;
   justify-content: center;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill);
-}
+  grid-gap: 5px;
+} 
 .book-details {
   display: flex;
 }
 .book-details  img {
-  margin: 0 20px;
+  margin: 0 50px;
 }
+
 .book-details-label {
   font-size: 1.2rem;
   align-self: flex-start;
+  text-align: left;
 }
 .book-details-grid {
   display: grid;
   align-content: flex-start;
-  align-items: center;
+  /* align-items: center; */
   grid-gap: 1rem;
   grid-template-columns: auto auto;
+}
+.book-info {
+  text-align: left;
+  margin-right: 60px;
+}
+@media only screen and (max-width: 800px) {
+  .book-details {
+    display: grid;
+    margin:auto;
+  }
+  .book-details-grid {
+    left: 50%;
+    margin: 20px 20px 0 40px;
+  }
+
 }
